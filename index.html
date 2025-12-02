@@ -443,23 +443,23 @@
         <div>
           <form class="card contact-form" action="https://api.web3forms.com/submit" method="POST">
             <!-- Replace with your own Web3Forms access key -->
-            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY_HERE" />
+            <input type="hidden" name="access_key" value="1caea67b-dab0-49e9-85e3-dc4fbf4e52d4" />
             <input type="hidden" name="subject" value="New lead from Midwest IT Provider website" />
             <input type="checkbox" name="botcheck" style="display:none;" />
 
             <div class="form-field">
               <label for="name">Full name</label>
-              <input type="text" id="name" name="name" required/>
+              <input type="text" id="thename" name="thename" required/>
             </div>
 
             <div class="form-field form-row">
               <div>
-                <label for="email">Work email</label>
-                <input type="email" id="email" name="email" required/>
+                <input pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$" required
+                  type="email" id="email" name="email" class="form-control" placeholder="Email" />
               </div>
               <div>
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone"/>
+                <input type="text" id="phonum" name="phonum" class="form-control" required placeholder="Phone Number" />
+                <span class="validity"></span>
               </div>
             </div>
             
